@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Profile</string>
+    <!-- values to be displayed on secondActivity  -->
+    <string name="full_name">Supriya Gadkari</string>
+    <string name="qualification">BE in CS</string>
+    <string name="profession">Software Engineer</string>
+    <string name="hobby">Cooking</string>
+    <string name="dreamjob">Database Developer</string>
+</resources>

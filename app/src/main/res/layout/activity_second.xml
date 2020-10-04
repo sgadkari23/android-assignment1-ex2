@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+    <!-- constraint layout containing textviews for labels and displaying value from MainActivity  -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginRight="83dp"
+        android:fontFamily="@font/andada"
+        android:text="Input from Activity One"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFullNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="61dp"
+        android:fontFamily="@font/andada"
+        android:text="Full Name:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <TextView
+        android:id="@+id/textViewQualificationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/andada"
+        android:text="Qualification:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewFullNameLabel" />
+
+    <TextView
+        android:id="@+id/textViewProfessionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/andada"
+        android:text="Profession"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQualificationLabel" />
+
+    <TextView
+        android:id="@+id/textViewHobbyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/andada"
+        android:text="Hobby:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProfessionLabel" />
+
+    <TextView
+        android:id="@+id/textViewDreamJobLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/andada"
+        android:text="Dream Job:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHobbyLabel" />
+
+    <TextView
+        android:id="@+id/textViewFullNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="61dp"
+        android:fontFamily="@font/andada"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewFullNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        tools:text="Full Name" />
+
+    <TextView
+        android:id="@+id/textViewQualificationValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/andada"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewQualificationLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFullNameValue" />
+
+    <TextView
+        android:id="@+id/textViewProfessionValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/andada"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewProfessionLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQualificationValue" />
+
+    <TextView
+        android:id="@+id/textViewHobbyValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/andada"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewHobbyLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProfessionValue" />
+
+    <TextView
+        android:id="@+id/textViewDreamJobValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/andada"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewDreamJobLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHobbyValue" />
+</androidx.constraintlayout.widget.ConstraintLayout>
